@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Resources/style.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Resources/Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Resources/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Images/favicon-16x16.png">
+    <link rel="manifest" href="./Resources/Images/site.webmanifest">
+    <!--Social Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+  <body>
+    <!--Header-->
+    <header>
+      <nav>
+          <div class="logo">
+            <a href="index.html"><img src="./Resources/Images/Logo.png" alt="logo image" class="logo"/></a>
+          </div>
+          <div class="sidebar">
+            <ul>
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              <li><a href="./index.html">Página Inicial</a></li>
+              <li><a href="./index.html">Sobre Mim</a></li>
+              <li><a href="./index.html">Projectos</a></li>
+            </ul>
+          </div>
+          <div class="navbar-links">
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./index.html">Sobre Mim</a></li>
+                <li><a href="./index.html">Projectos</a></li>
+            </ul>
+          </div>
+          <a href="./Resources/Ana Cajingue - CV.pdf" class="btn" target="_blank">Curriculum Vitae</a>
+          <div>   
+            <a href="#" class="toggle-button" onClick=showSidebar()>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <p>Tem um projecto interessante? Vamos falar.</p>
+      </section>
+
+      <section class="section"> 
+        <div class="container">
+          <h2>Contacto</h2>
+          <form action="#">
+            <label for="name">Nome</label>
+            <input type="text" placeholder="Introduza o seu nome" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Introduza o seu email" id="email" name="email" required>
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" placeholder="Escreva a sua mensagem" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="social-media">
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/anacajingue" target="_blank">
+                  <span>
+                      <i class='bx bxl-linkedin-square' style='color:#3700b3'></i>
+                  </span>
+              </a>
+              <a href="https://www.instagram.com/anacajingue/" target="_blank">
+                  <span>
+                      <i class='bx bxl-instagram-alt' style='color:#3700b3'></i>
+                  </span>
+              </a>
+          </div>
+      </section>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
