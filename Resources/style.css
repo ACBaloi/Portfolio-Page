@@ -10,7 +10,6 @@
 }
 
 body {
-    min-height: 100vh;
     background-color: #faf9f6;
     overflow-x: hidden;
 }
@@ -180,8 +179,9 @@ main {
   left: 8%;
 }
 
-section{
-    min-height: 80vh;
+
+section {
+    min-height: 100vh;
 }
 
 .banner h1 {
