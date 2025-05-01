@@ -10,7 +10,9 @@
 }
 
 body {
-  background-color: #faf9f6;
+    min-height: 100vh;
+    background-color: #faf9f6;
+    overflow-x: hidden;
 }
 
 a {
@@ -19,7 +21,7 @@ a {
   font-weight: 500;
 }
 
-.btn , .btn-submit, .btn-cv {
+.btn , .btn-submit {
   color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
@@ -43,13 +45,6 @@ a {
 }
 
 .btn:hover {
-  background: transparent;
-  border-color: #3700B3;
-  color: #3700B3;
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out;
-}
-
-.btn-cv:hover {
   background: transparent;
   border-color: #3700B3;
   color: #3700B3;
@@ -185,6 +180,10 @@ main {
   left: 8%;
 }
 
+section{
+    min-height: 80vh;
+}
+
 .banner h1 {
   color: rgba(55,0,179,1);
   font-size: 2.5rem;
@@ -232,21 +231,20 @@ h2, .about h2 a, #projects h2 a {
   text-justify: inter-word;
 }
 
-.skills {
-  display: flex;
-  text-align: left;
-  gap: 10em;
+.skills-list {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8em;
 }
 
-.skills ul {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
 
 .skills ul li {
-  font-weight: 500;
-  display: flex;
+    font-weight: 500;
+}
+
+.skills ul li:hover {
   transition: 0.3s ease-in-out;
 }
 
@@ -337,15 +335,13 @@ form input, form textarea {
   border-radius: 5px;
 }
 
-  /*----Footer----*/
   
 .footer-copyright {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  display:flex;
+  justify-content:flex-start;
   font-size: 0.75rem;
   font-weight: 600;
-  padding-top: 2rem;
+ 
 }
 
 /*----Media Queries---*/
