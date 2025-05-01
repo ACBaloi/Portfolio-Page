@@ -10,6 +10,7 @@
 }
 
 body {
+    min-height:100vh;
     background-color: #faf9f6;
     overflow-x: hidden;
 }
@@ -181,7 +182,7 @@ main {
 
 
 section {
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 .banner h1 {
@@ -341,7 +342,7 @@ form input, form textarea {
   justify-content:flex-start;
   font-size: 0.75rem;
   font-weight: 600;
- 
+  padding-bottom: 10px;
 }
 
 /*----Media Queries---*/
