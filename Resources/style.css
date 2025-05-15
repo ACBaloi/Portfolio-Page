@@ -197,18 +197,8 @@ section {
     transform:translateY(0);
 }
 
-/*
-.section-divider {
-    height: 2px;
-    background: linear-gradient(to right, #6200EE, transparent);
-    width: 80%;
-    margin: 40px auto;
-    border-radius: 1px;
-}
 
-*/
-
-.banner h1 {
+.banner h1, .about h1 {
   color: rgba(55,0,179,1);
   font-size: 2.5rem;
   font-weight: 900;
@@ -216,6 +206,7 @@ section {
   text-transform: inherit;
   width: 100%;   
 }
+
 
 .banner span {
   background-image: linear-gradient(90deg, rgba(55,0,179,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
@@ -241,11 +232,8 @@ h2, .about h2 a, #projects h2 a {
   font-weight: 500;
 }
 
-#intro {
-  color: #6200EE;
-}
 
-.about p, .intro p {
+.about p {
   color: #000;
   font-size: 1rem;
   width: 55%;
@@ -395,22 +383,25 @@ form input, form textarea {
 
   /*--Main--*/
 
-  .banner div {
-    margin-top: 170px;
-    margin-bottom: 170px;
+  section {
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 
   .banner h1 {
-    font-size: 2rem;
-    font-weight: 500;
+        font-size: 2.5rem;
+        font-weight: 500;
   }
 
   .banner p {
     display: inline;
   }
 
+  .about h1 {
+      display:none;
+  }
   .about p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     width: 90%;
     margin-top: 15px;
     margin-bottom: 25px;
