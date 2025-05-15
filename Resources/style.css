@@ -182,8 +182,31 @@ main {
 
 
 section {
-    min-height: 70vh;
+    padding: 40px 5% 80px 5%;
+    scroll-margin-top: 100px; /* offsets scroll for fixed nav */
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 1s;   
+}
+
+.show {
+    opacity: 1;
+    transform:translateY(0);
+}
+
+/*
+.section-divider {
+    height: 2px;
+    background: linear-gradient(to right, #6200EE, transparent);
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 1px;
+}
+
+*/
 
 .banner h1 {
   color: rgba(55,0,179,1);
