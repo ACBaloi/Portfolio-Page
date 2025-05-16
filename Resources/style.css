@@ -37,13 +37,6 @@ a {
   margin-top: 1rem;
 }
 
-.btn-cv {
-  display: none;
-  width: 190px;
-  height: 50px;
-  font-size: .75rem;
-}
-
 .btn:hover {
   background: transparent;
   border-color: #3700B3;
@@ -126,6 +119,7 @@ nav {
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  margin-right: 20px;
 }
 
 .toggle-button .bar {
@@ -182,9 +176,10 @@ main {
 
 
 section {
-    padding: 40px 5% 80px 5%;
+    padding: 60px 5% 80px 5%;
     scroll-margin-top: 100px; /* offsets scroll for fixed nav */
 }
+ 
 
 .fade-in {
     opacity: 0;
@@ -195,6 +190,10 @@ section {
 .show {
     opacity: 1;
     transform:translateY(0);
+}
+
+.banner {
+    display: none;
 }
 
 
@@ -208,7 +207,7 @@ section {
 }
 
 
-.banner span {
+.banner span, .about span {
   background-image: linear-gradient(90deg, rgba(55,0,179,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
   color: transparent;
   -webkit-background-clip: text;
@@ -239,7 +238,6 @@ h2, .about h2 a, #projects h2 a {
   width: 55%;
   margin-top: 15px;
   margin-bottom: 25px;
-  text-align: justify;
   text-justify: inter-word;
 }
 
@@ -388,22 +386,27 @@ form input, form textarea {
     margin-bottom: 70px;
   }
 
+  .banner {
+      display:grid;
+  }
+
   .banner h1 {
         font-size: 2rem;
         font-weight: 500;
   }
 
   .banner p {
-    display: inline;
+    display: inline-block;
+    margin-bottom: 100px;
   }
 
   .about h1 {
       display:none;
   }
+
   .about p {
     font-size: 1rem;
     width: 90%;
-    margin-top: 15px;
     margin-bottom: 25px;
     text-align: left;
   }
@@ -475,12 +478,11 @@ form input, form textarea {
     text-align: left;
   }
 
-  .btn-cv {
-        display: flex;
-        margin-top: 50px;
-        font-size: 0.7rem;
-        align-items:center;
+  .skills ul li {
+        font-size: 1rem;
   }
+
+  
   .card {
     width: 50%;
     margin-bottom: 40px;
