@@ -391,8 +391,8 @@ form input, form textarea {
   }
 
   .banner h1 {
-        font-size: 2rem;
-        font-weight: 500;
+        font-size: 2.5rem;
+        font-weight: 700;
   }
 
   .banner p {
@@ -410,6 +410,11 @@ form input, form textarea {
     margin-bottom: 25px;
     text-align: left;
   }
+
+  .skills ul li {
+        font-size: 1rem;
+  }
+
 
   .card {
     width: 90%;
