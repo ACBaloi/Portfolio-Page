@@ -264,7 +264,7 @@ h2, .about h2 a, #projects h2 a {
 .card {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 10px;
   transition: 0.3s;
@@ -281,7 +281,7 @@ h2, .about h2 a, #projects h2 a {
   align-items: stretch; /* Ensures that both image and text are vertically aligned */
 }
 
-.card-img {
+.card-img, .card-img-tech {
   border-radius: 0.5rem 0.5rem 0 0;
   width: 30%;
   flex: 0 0 30%; /* Ensures the image takes up 30% of the card width */
